@@ -1,2 +1,2 @@
 all: main.c
-	gcc -c -Wall prog main.c
+	gcc -g -Wall prog main.c
