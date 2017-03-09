@@ -3,12 +3,12 @@
 
 int random_my(int min, int max)
 {
-  int tmp;
+  int tmp; // nie potrzebne
   if (max >= min) // min i max zawsze 0 i 100 wiêc warunek zbedny
   {
     max -= min; // od 100 odejmujemy 0?
   }
-  else // nigdy siê  nie wykonuje
+  else // nigdy sie  nie wykonuje
   {
     tmp = min - max;
     min = max;
@@ -20,7 +20,7 @@ int random_my(int min, int max)
 int f()
 {
   const int N = 17; // zmiana na dlugosc imienia i nazwiska
-  int* x = (int *)malloc(N * sizeof(int)); // malloc dla N liczb
+  int* x = (int *)malloc(N * sizeof(int)); // malloc dla N liczb oraz brak free()
   int i;
   int mean = 0;
   for (i = 0; i <= N; ++i) // N+1 liczb, ostatnia wychodzi poza zarezerowana pamiec
